@@ -5,14 +5,16 @@ pipeline {
         steps {
             sh "ls"
         }
+    }
     stage (' Test '){
         steps {
             sh "pwd"
         }
+    }
     stage (' Deploy '){
         steps {
             sh "touch hello.txt"
         }
-  }
+   }
  }
 }
